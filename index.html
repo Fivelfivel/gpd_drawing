@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />    
-    <title>Rat Map</title>     
+    <title>GPS Drawing</title>     
     <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
     <meta http-equiv='Pragma' content='no-cache' />
     <meta http-equiv='Expires' content='0' />    
@@ -10,11 +10,12 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />     
     <link href='style.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <script src='db.js'></script> 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js'></script>
 </head>
 <body>
     <div id='map'></div>
-    <div id='pointer'>↑</div>
+    <input type='button' id='draw_btn' value='Start' />
     <script src='map.js'></script>    
 </body>
 </html>
